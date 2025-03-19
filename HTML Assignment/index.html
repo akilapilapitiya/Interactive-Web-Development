@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cake Store</title>
+    <style>
+        .get-orders button:hover {
+        background-color: #46644d;
+        }
+
+        .get-orders input, .get-orders select, .get-orders button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .body-container input{
+            width: 100%;
+            outline: none;
+        }
+    </style>
 </head>
-<body>
+<body style="font-family: 'Poppins', sans-serif;
+        background-color: rgb(255, 248, 255);
+        margin: 0;
+        padding: 0;">
+    <header>
+        <h1 class = "body-header" style="
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;">hello</h1>
+    </header>
+    <div class="body-container" style="
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
+        max-width: 900px;
+        margin: 50px auto;
+        gap: 20px;
+        position: relative;
+        padding-top: 120px;
+        padding-left: 50px;">
+
+        <form action="#" class="get-orders" method="post" style="
+            flex: 0.8;
+            max-width: 40%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;">
+            <h1 style="margin-bottom: 15px; 
+                text-align: center;">Cake Orders</h1>
+
+            <input type="text" placeholder="Full Name">
+            <input type="tel" placeholder="Contact Number">
+            <input type="email" placeholder="Email Address">
+            <input type="number" placeholder="Number of Units">
+
+            <select name="cake-type" id="cake-type">
+                <option value="chocolate">Chocolate Cake</option>
+                <option value="vanilla">Vanilla Cake</option>
+                <option value="strawberry">Strawberry Cake</option>
+                <option value="ribbon">Ribbon Cake</option>
+            </select>
+            <button onclick="" style="
+                background-color: #28a745;
+                color: white;
+                border: none;
+                cursor: pointer;">
+            Proceed to Payments</button>
+        </form>
+        <div class="body-contents" style="
+            flex: 1.2;
+            max-width: 45%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;">
+            <h2>About Our Cakes</h2>
+            <p>
+                Welcome to our Cake Store! We specialize in crafting delicious and freshly baked cakes 
+                for all occasions. Whether you love the rich taste of chocolate, the classic flavor of 
+                vanilla, or the fruity delight of strawberry, we have something for everyone.
+            </p>
+            <p>
+                Our cakes are made with high-quality ingredients and a touch of love to ensure the best 
+                taste and texture. Order now and indulge in the perfect slice of happiness!
+            </p>
+        </div>
+    </div>
     
 </body>
 </html>
