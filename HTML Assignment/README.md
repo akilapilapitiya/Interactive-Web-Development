@@ -2,7 +2,10 @@
 Only the Orders menu is fully designed using pure HTML and inline CSS. <br>
 Code starts at 'index.html'
 
-## Assets used
+## Web Assets Used
 Logo - https://static.cdnlogo.com <br>
 Fonts - Google Fonts
 
+## Local Assets Used
+All Dummy Webpages - src/Pages <br>
+All image assets - src/Assets/
