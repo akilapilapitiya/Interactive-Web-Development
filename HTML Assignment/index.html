@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Store.lk</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .get-orders input, .get-orders select, .get-orders button, .user-text-area {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .body-container input{
+            width: 100%;
+            outline: none;
+            background: (253, 246, 248);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: rgb(73, 59, 59);
+            text-decoration: none;
+            font-size: 16px;
+        } 
+        button:hover{
+            font-weight: bold;
+        }
+
+        #input-area{
+            background-color: rgb(253, 246, 248);
+        }
+
+        #text-area-input{
+            background-color: rgb(253, 246, 248);
+            font-family: Arial;
+            outline: none;
+        }
+        p, ul{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: rgb(255, 248, 255); margin: 0; padding: 0; background-image: url(src/Assets/strawberry-cake.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <header style=" position: fixed; top: 0; left: 0; width: 100%; background-color: #ffff; color: rgb(187, 124, 124); padding: 10px 0; text-align: 10px 20px; z-index: 1000; display: flex;
+    justify-content: space-between;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <img src="src/Assets/logo.jpg" alt="" style="height: 80px; width: auto; margin: 0 0;">
+        <div class="company-name" style="font-size: 24px; font-weight: bold;">
+            <h1 style="margin: 0;">
+                Cake Store.lk</h1>
+        </div>
+        <nav style="font-size: 30px; font-weight: bold; margin-top: 20px; margin-right: 20px;">
+            <a href="src/Pages/home.html" id="navigation-link">Home</a>
+            <a href="src/Pages/menu.html" id="navigation-link">Menu</a>
+            <a href="index.html" id="navigation-link">Orders</a>
+            <a href="src/Pages/contact.html" id="navigation-link">Contact</a>
+        </nav>
+    </header>
+    <div class="template-div">
+        <div class="row-1-elements">
+            <div class="body-container" style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 900px; margin: 50px auto; gap: 20px; position: relative; padding-top: 120px; padding-left: 50px; padding-top: 120px; ">
+                <form action="#" class="get-orders" method="post" style="flex: 0.8; max-width: 40%; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)">
+                    <h1 style="margin-bottom: 15px; text-align: center;">Cake Orders</h1>
+                    <input type="text" placeholder="Full Name" id="input-area">
+                    <input type="tel" placeholder="Contact Number" id="input-area">
+                    <input type="email" placeholder="Email Address" id="input-area">
+                    <input type="number" placeholder="Number of Units" id="input-area">
+                    <select name="cake-type" id="cake-type" style="background-color: rgb(253, 246, 248);">
+                        <option value="" disabled selected>Select Cake Type</option>
+                        <option value="chocolate">Chocolate Cake</option>
+                        <option value="vanilla">Vanilla Cake</option>
+                        <option value="strawberry">Strawberry Cake</option>
+                        <option value="ribbon">Ribbon Cake</option>
+                    </select>
+                    <select name="cake-icing-type" id="cake-icing-type" style="background-color: rgb(253, 246, 248);">
+                        <option value="" disabled selected>Select Icing Type</option>
+                        <option value="chocolate">Chocolate Cream</option>
+                        <option value="vanilla">Vanilla Cream</option>
+                        <option value="strawberry">Strawberry Cream Flavour</option>
+                        <option value="ribbon">Mixed Flavours</option>
+                    </select>
+                    <textarea name="user-requests" id="text-area-input" placeholder="Add Special Requests" class="user-text-area" rows="4"></textarea>
+                    
+                    <button onclick="" style="background-color: #b455d1; color: white; border: none; cursor: pointer;">Proceed to Payments</button>
+                    <button onclick="" style="background-color: #eb5989; color: white; border: none; cursor: pointer;">Reset Order</button>
+                </form>
+                <div class="body-contents" style="flex: 1.2; max-width: 45%; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #fff;">
+                    <h2 style="font-weight: bold;">About Our Cakes</h2>
+                    <p style="font-weight: normal; margin: 20px;">
+                        Welcome to our Cake Store! We specialize in crafting delicious and freshly baked cakes 
+                        for all occasions. Whether you love the rich taste of chocolate, the classic flavor of 
+                        vanilla, or the fruity delight of strawberry, we have something for everyone.
+                    </p>
+                    <hr>
+                    <p>
+                        Our cakes are made with high-quality ingredients and a touch of love to ensure the best 
+                        taste and texture. Order now and indulge in the perfect slice of happiness!
+                    </p>
+                    <hr>
+                    <p>
+                        You Can Customize Your orders according to 
+                        <ul style="margin-left: 40px;">
+                            <li>Icing Flavour</li>
+                            <li>Cake Flavour</li>
+                        </ul>
+                    </p>
+                </div>
+        </div>
+        <footer>
+            <div class="row-2-elements" style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; margin: 50px auto; gap: 20px; position: relative; flex: 0.8; padding: 5px; border: none; background-color: #604269; bottom: 0px; margin-bottom: 0;" >
+            <div class="location-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5389294790452!2d80.63218117415951!3d7.2931806927143095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662a39d74041%3A0xa3343ec9c016ffd9!2sKandy%20Clock%20Tower%2C%20AB42%2C%20Kandy%2020000!5e0!3m2!1sen!2slk!4v1742435078539!5m2!1sen!2slk" width="auto" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <hr style="width: 2px; height: 100px; background-color: black; border: none;">
+
+            <div class="location-details">
+                <p id="footer-text">© 2025 Cake Store.lk. All rights reserved <br> Akila Pilapitiya <br> IM/2022/056</p>
+            </div>
+            <hr style="width: 2px; height: 100px; background-color: black; border: none;">
+            <div class="social">
+                <p id="location-text">
+                    Find us on Social Media<br>
+                    Facebook <br>
+                    Instagram <br>
+                    Gmail <br>
+                </p>
+            </div>
+        </div>
+        </footer>
+  
+    </div>    
+    </div> 
+</body>
+</html>
