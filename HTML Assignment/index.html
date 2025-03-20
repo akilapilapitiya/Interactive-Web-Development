@@ -43,7 +43,6 @@
     </style>
 </head>
 <body style="font-family: 'Poppins', sans-serif; background-color: rgb(255, 248, 255); margin: 0; padding: 0; background-image: url(Assets/strawberry-cake.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="background-image" style=""></div>
     <header style=" position: fixed; top: 0; left: 0; width: 100%; background-color: #ffff; color: rgb(187, 124, 124); padding: 10px 0; text-align: 10px 20px; z-index: 1000; display: flex;
     justify-content: space-between;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <img src="Assets/logo.jpg" alt="" style="height: 80px; width: auto; margin: 0 0;">
@@ -72,6 +71,14 @@
                 <option value="strawberry">Strawberry Cake</option>
                 <option value="ribbon">Ribbon Cake</option>
             </select>
+            <select name="cake-icing-type" id="cake-icing-type" style="background-color: rgb(253, 246, 248);">
+                <option value="" disabled selected>Select Icing Type</option>
+                <option value="chocolate">Chocolate Cream</option>
+                <option value="vanilla">Vanilla Cream</option>
+                <option value="strawberry">Strawberry Cream Flavour</option>
+                <option value="ribbon">Mixed Flavours</option>
+            </select>
+            
             <button onclick="" style="background-color: #b455d1; color: white; border: none; cursor: pointer;">Proceed to Payments</button>
         </form>
         <div class="body-contents" style="flex: 1.2; max-width: 45%; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #fff;">
